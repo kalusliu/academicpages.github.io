@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Niklaus(Yi) Liu's Personal Website"
 title_separator          : "-"
-name                     : &name "NiKlaus(Yi) Liu"
+name                     : &name "Niklaus(Yi) Liu"
 description              : &description "Yi Liu was born in Hangzhou, Zhejiang, China, in 1997. He is about to acquire an undergraduate degree in computer science at Heilongjiang University. He used to be a visiting student at Jun Zhao Lab of Nanyang Technological University in January 2019. Now, he is a research assistant at James Yu Lab of Southern University of Science and Technology. Currently, he gets a pre-doctoral offer from Cornell University and the University of Maryland."
 url                      : https://Niklausliu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         : 
   foursquare       :
-  github           : "kalusliu"
+  github           : "niklausliu"
   google_plus      :
   keybase          :
   instagram        :

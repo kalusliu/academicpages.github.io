@@ -85,9 +85,9 @@ author:
   bio              : "Liu Yi was born in Hangzhou, Zhejiang, China, in 1997. He is about to acquire an undergraduate degree in computer science at Heilongjiang University. As a research assistant, he went to Nanyang Technological University in Singapore in January 2019. Currently, he gets a pre-doctoral offer from Cornell University and the University of Maryland.
   location         : "Shenzhen, China"
   employer         : "Southern University of Science and Technology"
- #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=RNNNv7QAAAAJ"
-  email            :  97liuyi@gmail.com
+  email            :  "97liuyi@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

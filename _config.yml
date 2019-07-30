@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kalus(Yi) Liu's Personal Website"
 title_separator          : "-"
 name                     : &name "Kalus(Yi) Liu"
-description              : &description "Liu Yi was born in Hangzhou, Zhejiang, China, in 1997. He is about to acquire an undergraduate degree in computer science at Heilongjiang University. As a research assistant, he went to Nanyang Technological University in Singapore in January 2019. Currently, he is a pre-doctoral offer from Cornell University and the University of Maryland."
+description              : &description "Liu Yi was born in Hangzhou, Zhejiang, China, in 1997. He is about to acquire an undergraduate degree in computer science at Heilongjiang University. He used to be a visiting student at Jun Zhao Lab of Nanyang Technological University in January 2019. Now, he is a research assistant at James Yu Lab of Southern University of Science and Technology. Currently, he gets a pre-doctoral offer from Cornell University and the University of Maryland."
 url                      : https://kalusliu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "kalusliu/kalusliu.github.io"
@@ -81,29 +81,29 @@ analytics:
 # Site Author
 author:
   name             : "Kalus(Yi) Liu"
-  avatar           : "profile.png"
-  bio              : "Liu Yi was born in Hangzhou, Zhejiang, China, in 1997. He is about to acquire an undergraduate degree in computer science at Heilongjiang University. He used to be a visiting student at Jun Zhao Lab of Nanyang Technological University in January 2019. Now, he is a research assistant at James Yu Lab of Southern University of Science and Technology. Currently, he gets a pre-doctoral offer from Cornell University and the University of Maryland."
+  avatar           : "liuyi.jpg"
+  bio              : "Now, he is a research assistant at James Yu Lab of SUSTech."
   location         : "Shenzhen, China"
-  employer         : "Southern University of Science and Technology"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  employer         : "SUSTech"
+ # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=RNNNv7QAAAAJ"
   email            : "97liuyi@gmail.com"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/profile/Yi_Liu358"# example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : 
   foursquare       :
-  github           : "academicpages"
+  github           : "kalusliu"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/0000-0002-0811-6150"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -111,7 +111,7 @@ author:
   tumblr           :
   twitter          : "replacethistwitterhandle"
   vine             :
-  weibo            :
+  weibo            : "6077082741"
   xing             :
   youtube          :
   wikipedia        :

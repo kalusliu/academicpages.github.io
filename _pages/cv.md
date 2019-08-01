@@ -94,5 +94,6 @@ Honors & Scholarships
 
 Service and leadership
 ======
+* **Lead Guest Editors** of the special issues **Data Mining** of the [International Journal on Data Science and Technology](http://www.sciencepublishinggroup.com/specialissue/390003)
 * IEEE Student Member
 * The member of the Cornell, Maryland, Max Planck Pre-doctoral Research School 2019 (CMMRS 2019)[[Link]](https://github.com/niklausliu/Honors_Yi-Liu)

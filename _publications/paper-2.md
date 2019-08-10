@@ -39,5 +39,5 @@ With the rise of the concept of financial technology, financial and technology g
 </pre>
 
 
-[[Download]](https://dl.acm.org/citation.cfm?id=3297743)
+[[Link]](https://dl.acm.org/citation.cfm?id=3297743)[[Download]](https://dl.acm.org/citation.cfm?id=3297743)
 

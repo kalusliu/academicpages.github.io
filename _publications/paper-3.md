@@ -6,8 +6,27 @@ excerpt: ' 国家财政收入来源之一是税收, 而目前, 税务稽查存�
 date: 2019-03-20
 venue: '计算机与数字工程'
 paperurl: 'http://jsj.709journal.com/CN/article/downloadArticleFile.do?attachType=PDF&id=1275'
+
 ---
-## 摘要
+
+# 摘要
 国家财政收入来源之一是税收, 而目前, 税务稽查存在着数据采集不全面, 数据传递和存储技术有待完善, 信息无法共享导致稽查成本高和效率低等多种问题. 论文提出了基于时空信息的智慧稽查的大数据应用平台框架构建, 旨在将互联网+, 大数据挖掘, 数据可视化等技术服务综合运用于此平台, 实现税务稽查的低成本, 高效, 达到了基础数据的时间空间一体化, 各行业部门资源整合, 信息共享.
 
-[[BibTex]](https://scholar.googleusercontent.com/scholar.bib?q=info:ZWu8gDZyudEJ:scholar.google.com/&output=citation&scisdr=CgWsBrQ2ENqW2akY7D4:AAGBfm0AAAAAXUEd9D6x0A53N9HK3KDb31V6-Frx1AYF&scisig=AAGBfm0AAAAAXUEd9HGUGc_Uhp9BOKlVZht-tLZLaOhG&scisf=4&ct=citation&cd=-1&hl=zh-CN&authuser=1)[[Link]](http://jsj.709journal.com/CN/article/downloadArticleFile.do?attachType=PDF&id=1275)
+## 模型
+
+## 结论
+
+## 引用
+<pre>
+@article{张彦俊2019基于时空大数据的智慧稽查平台构建研究,
+  title={基于时空大数据的智慧稽查平台构建研究},
+  author={张彦俊 and 杨晓冬 and 刘毅 and 郑大渊 and 毕树军},
+  journal={计算机与数字工程},
+  volume={47},
+  number={3},
+  pages={616--619},
+  year={2019}
+}   
+</pre>
+
+[[Link]](http://kns.cnki.net/kcms/detail/detail.aspx?filename=JSSG201903026&dbcode=CJFQ&dbname=CJFDTEMP&v=)[[Download]](http://jsj.709journal.com/CN/article/downloadArticleFile.do?attachType=PDF&id=1275)

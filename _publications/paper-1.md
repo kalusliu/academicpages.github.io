@@ -6,9 +6,15 @@ excerpt: 'With the explosive growth of time-series data, the scale of time-serie
 date: 2019-03-04
 venue: 'IEEE Internet of Things Journal'
 paperurl: 'https://arxiv.org/pdf/1903.00237'
+
 ---
-## Abstart
+
+# Abstart
 With the explosive growth of time-series data, the scale of time-series data has already exceeds the conventional computation and storage capabilities in many applications. On the other hand, the information carried by time-series data has high redundancy due to the strong correlation between time-series data. In this paper, we propose the new dominant dataset selection algorithms to extract the dataset that is only a small dataset but can represent the kernel information carried by time-series data with the error rate less than {\epsilon}, where {\epsilon} can be arbitrarily small. We prove that the selection problem of the dominant dataset is an NP-complete problem. The affine transformation model is introduced to define the linear transformation function to ensure the selection function of dominant dataset with the constant time complexity O(1). Furthermore, the scanning selection algorithm with the time complexity O(n2) and the greedy selection algorithm with the time complexity O(n3) are respectively proposed to extract the dominant dataset based on the linear correlation between time-series data. The proposed algorithms are evaluated on the real electric power consumption data of a city in China. The experimental results show that the proposed algorithms not only reduce the size of kernel dataset but ensure the time-series data integrity in term of accuracy and efficiency.
+
+## Model
+
+## Result
 
 [[Link]](https://arxiv.org/pdf/1903.00237)
 

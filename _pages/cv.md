@@ -11,9 +11,12 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, Heilongjiang University, 2016-2019
+* B.S. in Computer Science, Heilongjiang University, 2016-2019 (**In advance a year**)
   * GPA 8.9/10
   * RNKA: 2/170
+* **Pre-doctoral** school in Computer Science, MPI-SWS, 2019
+  * The Cornell, Maryland, Max Planck Pre-doctoral Research School 2019 (CMMRS 2019)[[Link]](https://cmmrs.mpi-sws.org)
+
   
 Work experience
 ======
@@ -96,4 +99,5 @@ Service and leadership
 ======
 * **Lead Guest Editors** of the special issues **Data Mining** of the [International Journal on Data Science and Technology](http://www.sciencepublishinggroup.com/specialissue/390003)
 * IEEE Student Member
+* CCF Student Member
 * The member of the Cornell, Maryland, Max Planck Pre-doctoral Research School 2019 (CMMRS 2019)[[Link]](https://github.com/niklausliu/Honors_Yi-Liu)

@@ -16,9 +16,7 @@ Breast cancer is the second leading cause of cancer death in women. At the same 
 
 ## Result
 
-## Cations
-
-
+## Citations
 <pre>
 @INPROCEEDINGS{8789297, 
 author={L. {Yi} and W. {Yi}}, 

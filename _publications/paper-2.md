@@ -11,10 +11,14 @@ paperurl: 'https://github.com/niklausliu/niklausliu.github.io/raw/master/files/p
 With the rise of the concept of financial technology, financial and technology gradually in-depth integration, scientific and technological means to become financial product innovation, improve financial efficiency and reduce financial transaction costs an important driving force. In this context, the new technology platform is from the business philosophy, business model, technical means, sales, internal management and other dimensions to re-shape the financial industry. In this paper, the existing big data platform architecture technology innovation, adding space-time data elements, combined with the insurance industry for practical analysis, put forward a meaningful product circle and customer circle.
 
 ## Model
+The overall architecture of the platform is divided into seven layers, including data sources, data acquisition and aggregation, data storage and calculation, database management layer, data service layer, data analysis layer, integrated application and terminal layer, and to develop corresponding data standards and application specifications and security Management system, the overall structure as shown (see Figure 3 and Figure 4).
 
+<img src="/images/paper-2-1 " alt="Business model based on big data platform." title="Business model based on big data platform." width="700" height="350" />
+
+<img src="/images/paper-2-2 " alt="Big data platform overall framework." title="Big data platform overall framework." width="350" height="700" />
 
 ## Conclusion
-
+Big data platform combined with space-time data can really integrate its own data resources, but it also can be derived from a large number of products, on the cost reduction, risk prevention on the business are helpful. Take the insurance industry as an example. The help of this big data platform for product design, product recommendation, product pricing, product marketing and anti-fraud can be enormous. It can also be said that "financial technology" helps the insurance industry. GIS technology has been quite complete. With the maturing of big data technology, the sparks collide with each other are incalculable.
 
 
 ## Citations

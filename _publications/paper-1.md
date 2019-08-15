@@ -51,7 +51,7 @@ $${D_{LS}}(P,S) \triangleq ||S - {S_{LS}}'||$$
 
 (1)Scanning Selection Algorithm (SSA)
 
-<img src="/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)." title="Scanning Selection Algorithm (SSA)." width="500" height="700" />
+<img src="/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)." title="Scanning Selection Algorithm (SSA)." width="700" height="500" />
 
 A sample for the dominant dataset selection process based on SSA:
 
@@ -61,7 +61,7 @@ The total time complexity of SSA is O(m*n)+O(n^3), namely, O(n^3).
 
 (2)Greedy Selection Algorithm (GSA)
 
-<img src="/images/paper-1-4.png" alt="Greedy Selection Algorithm (GSA)." title="Greedy Selection Algorithm (GSA)." width="450" height="700" />
+<img src="/images/paper-1-4.png" alt="Greedy Selection Algorithm (GSA)." title="Greedy Selection Algorithm (GSA)." width="700" height="500" />
 
 A sample for the dominant dataset selection process based on GSA:
 

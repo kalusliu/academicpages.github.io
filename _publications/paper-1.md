@@ -36,6 +36,7 @@ $$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on t
 | DS4 | 12000 | 7 | 84.000 | 7-day consumption data for each user |
 
 * Affine Relation Model
+<img src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="600" height="300" />
 
 <div align=center><img width="600" height="300" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-1.png" alt="Procedure for generating the pivot pairs."/></div>
 

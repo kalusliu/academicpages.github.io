@@ -36,11 +36,8 @@ $$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on t
 | DS4 | 12000 | 7 | 84.000 | 7-day consumption data for each user |
 
 * Affine Relation Model
-![Procedure for generating the pivot pairs.](https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-1.png "GitHub,Social Coding")
-<img src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="600" height="300" />
 
-<div align=center><img width="600" height="300" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-1.png" alt="Procedure for generating the pivot pairs."/></div>
-
+<img src="/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="600" height="300" />
 
 Assuming that the central object dataset $$P$$ and the sample object dataset $$S$$, the two linear distance measures are introduced as follows:
 
@@ -52,7 +49,7 @@ $${D_{LS}}(P,S) \triangleq ||S - {S_{LS}}'||$$
 
 * Dominant Dataset Selection Aldorithms
 (1)Scanning Selection Algorithm (SSA)
-<div align=center><img width="450" height="700" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)."/></div>
+<img src="/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)." title="Scanning Selection Algorithm (SSA)." width="450" height="700" />
 
 A sample for the dominant dataset selection process based on SSA:
 <div align=center><img width="450" height="500" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA."/></div>

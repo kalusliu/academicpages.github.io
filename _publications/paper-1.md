@@ -20,6 +20,57 @@ With the popularity of smart devices and mobile phones, the time-series data (TS
 and let $$ P = \{ {p_i}|{p_i} \in \mathbb{R},1 \leqslant i \leqslant k\} $$be another dataset, $$ P \subset X,|P| \ll |X|(k \leqslant n)$$. If there is a reduction function $$f$$ during the time period $$T$$ that can meet the requirement of $$f(P) \doteq {Y_P}$$ and 
 $$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on the function $$f$$.
 
+* ($$\varepsilon ,\delta $$)-solver: Given the parameters $$\varepsilon $$ ($$\varepsilon >0$$) and $$\delta $$ ($$0 \leqslant \delta  \leqslant 1$$), the function $$f$$ is established by the correlation between the sample objects in $$X$$. A small dataset $$P$$ can be selected as a dominant dataset of $$X$$ by the function $$f$$ such that the information representation problem of $$X$$ can be solved in the small dataset $$P$$ instead of $$X$4 under the condition that the probability of information extraction error being larger than $$\varepsilon $$ is less than $$\delta $$. This solution condition of dominant dataset selection problem is defined as ($$\varepsilon ,\delta $$)-solver. If $$\delta $$ = 0, it means that the information extraction error is less than $$\varepsilon $$. In such case, the solution condition is defined as $$\varepsilon $$-solver.
+
+* Correlation Distance): In order to measure the degree of correlation between $$X$$ and $$Y$$ , the correlation distance between $$X$$ and $$Y$$ is defined as $$D(X,Y)$$. Based on ($$\varepsilon ,\delta $$)-solver, an element of dominant dataset can be determined by whether $$D(x,y) \leqslant \varepsilon $$ can be met. Note that the correlation distance holds the commutative property, that is, $$D(X,Y) = D(Y,X)$$.
+
+## Methods
+* Datasets
+
+| Dataset | Users(n) | Days(m) | Data records(thousand) | Description |
+| :---: | :----: | :----: | :----: |  :----: | 
+| DS0| 1032 | 21 | 21.672| 21-day consumption data for each user |
+| DS1 | 3000 |  7  |  21.000     | 7-day consumption data for each user|
+| DS2 | 6000 | 7 | 42.000 | 7-day consumption data for each user|
+| DS3 | 9000 | 7 | 63.000 | 7-day consumption data for each user|
+| DS4 | 12000 | 7 | 84.000 | 7-day consumption data for each user |
+
+* Affine Relation Model
+
+<div align=center><img width="600" height="300" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-1.png" alt="Procedure for generating the pivot pairs."/></div>
+
+
+Assuming that the central object dataset $$P$$ and the sample object dataset $$S$$, the two linear distance measures are introduced as follows:
+
+(1)Affine linear correlation distance (AFF): $${D_{AFF}}(P,S) \triangleq ||S - S{'_{AFF}}||$$
+
+(2)Least-squares linear transformation distance (LS): $${D_{LS}}(P,S) \triangleq ||S - S{'_{LS}}||$$
+
+* Dominant Dataset Selection Aldorithms
+(1)Scanning Selection Algorithm (SSA)
+<div align=center><img width="450" height="700" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)."/></div>
+
+A sample for the dominant dataset selection process based on SSA:
+<div align=center><img width="450" height="500" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA."/></div>
+The total time complexity of SSA is O(m*n)+O(n^3), namely, O(n^3).
+
+(2)Greedy Selection Algorithm (GSA)
+<div align=center><img width="450" height="700" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-4.png" alt="Greedy Selection Algorithm (GSA)."/></div>
+
+A sample for the dominant dataset selection process based on GSA:
+<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-5.png" alt="A sample for the dominant dataset selection process based on GSA."/></div>
+The total time complexity of GSA isO(m*n) + O(n^3) + O(n^4), namely, O(n^4).
+
+## Results
+* Effects of Parameter $$\delta $$ on the Dominant Dataset Selection
+<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-6.png"/></div>
+<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-7.png"/></div>
+<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-10.png"/></div>
+
+* The number distribution of target objects
+<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-8.png"/></div>
+<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-9.png"/></div>
+
 
 [[Link]](https://arxiv.org/pdf/1903.00237)
 

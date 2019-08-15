@@ -52,25 +52,28 @@ $${D_{LS}}(P,S) \triangleq ||S - {S_{LS}}'||$$
 <img src="/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)." title="Scanning Selection Algorithm (SSA)." width="450" height="700" />
 
 A sample for the dominant dataset selection process based on SSA:
-<div align=center><img width="450" height="500" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA."/></div>
+<img src="/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA." title="A sample for the dominant dataset selection process based on SSA." width="450" height="500" />
 The total time complexity of SSA is O(m*n)+O(n^3), namely, O(n^3).
 
 (2)Greedy Selection Algorithm (GSA)
-<div align=center><img width="450" height="700" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-4.png" alt="Greedy Selection Algorithm (GSA)."/></div>
+<img src="/images/paper-1-4.png" alt="Greedy Selection Algorithm (GSA)." title="Greedy Selection Algorithm (GSA)." width="450" height="700" />
 
 A sample for the dominant dataset selection process based on GSA:
-<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-5.png" alt="A sample for the dominant dataset selection process based on GSA."/></div>
+<img src="/images/paper-1-5.png" alt="A sample for the dominant dataset selection process based on GSA." title="A sample for the dominant dataset selection process based on GSA." width="500" height="400" />
 The total time complexity of GSA isO(m*n) + O(n^3) + O(n^4), namely, O(n^4).
 
 ## Results
 * Effects of Parameter $$\delta $$ on the Dominant Dataset Selection
-<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-6.png"/></div>
-<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-7.png"/></div>
-<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-10.png"/></div>
+<img src="/images/paper-1-6.png"  width="500" height="400" />
+<img src="/images/paper-1-7.png"  width="500" height="400" />
+<img src="/images/paper-1-10.png"  width="500" height="400" />
+
+
 
 * The number distribution of target objects
-<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-8.png"/></div>
-<div align=center><img width="500" height="400" src="https://github.com/niklausliu/niklausliu.github.io/blob/master/images/paper-1-9.png"/></div>
+<img src="/images/paper-1-8.png"  width="500" height="400" />
+<img src="/images/paper-1-9.png"  width="500" height="400" />
+
 
 
 [[Link]](https://arxiv.org/pdf/1903.00237)

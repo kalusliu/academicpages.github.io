@@ -86,6 +86,8 @@ The total time complexity of GSA isO(m*n) + O(n^3) + O(n^4), namely, O(n^4).
 
 <img src="/images/paper-1-9.png"  width="500" height="400" />
 
+# CONCLUSION 
+This paper studies how to extract the dominant dataset from time-series data. We prove that the selection problem of the minimum dominant dataset is an NP-complete problem. Based on the linear correlation relationship between time-series data objects, we present a recursive affine transformation function to realize the efficient dominant dataset selection. In addition, the linear correlation distance is applied as the constraint condition for the dominant dataset selection. We further propose the dominant dataset selection algorithms based on the scanning strategy and the greedy strategy. The analysis and experimental results show that the proposed algorithms have high performance in terms of effectiveness and efficiency. In the future, we will continue to investigate the dominant dataset selection methods based on some linear/nonlinear relation models between time-series data, and further evaluate the proposed methods using the different types of time-series data on multiple application scenarios.
 
 
 [[Link]](https://arxiv.org/pdf/1903.00237)

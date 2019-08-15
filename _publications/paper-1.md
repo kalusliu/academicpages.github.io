@@ -71,6 +71,7 @@ The total time complexity of GSA isO(m*n) + O(n^3) + O(n^4), namely, O(n^4).
 
 ## Results
 * Effects of Parameter $$\delta $$ on the Dominant Dataset Selection
+
 <img src="/images/paper-1-6.png"  width="500" height="400" />
 
 <img src="/images/paper-1-7.png"  width="500" height="400" />
@@ -80,6 +81,7 @@ The total time complexity of GSA isO(m*n) + O(n^3) + O(n^4), namely, O(n^4).
 
 
 * The number distribution of target objects
+
 <img src="/images/paper-1-8.png"  width="500" height="400" />
 
 <img src="/images/paper-1-9.png"  width="500" height="400" />

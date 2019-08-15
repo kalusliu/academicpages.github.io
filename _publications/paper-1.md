@@ -17,8 +17,8 @@ With the popularity of smart devices and mobile phones, the time-series data (TS
 
 ## Definitions
 * Dominant Dataset：Assuming that $$ X=\left\{x_{i} | x_{i} \in \mathbb{R}, 1 \leq i \leq n\right\} $$ is a finite time-series dataset,
-and let 
-
+and let $$ P = \{ {p_i}|{p_i} \in \mathbb{R},1 \leqslant i \leqslant k\} $$be another dataset, $$ P \subset X,|P| \ll |X|(k \leqslant n)$$. If there is a reduction function $$f$$ during the time period $$T$$ that can meet the requirement of $$f(P) \doteq {Y_P}$$ and 
+$$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on the function $$f$$.
 
 
 [[Link]](https://arxiv.org/pdf/1903.00237)

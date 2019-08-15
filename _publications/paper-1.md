@@ -37,7 +37,7 @@ $$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on t
 
 * Affine Relation Model
 
-<img src="/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="600" height="300" />
+<img src="/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="600" height="300" align="center" />
 
 Assuming that the central object dataset $$P$$ and the sample object dataset $$S$$, the two linear distance measures are introduced as follows:
 

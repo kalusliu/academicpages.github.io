@@ -43,9 +43,9 @@ $$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on t
 
 Assuming that the central object dataset $$P$$ and the sample object dataset $$S$$, the two linear distance measures are introduced as follows:
 
-(1)Affine linear correlation distance (AFF): $${D_{AFF}}(P,S) \triangleq ||S - S{'_{AFF}}||$$
+(1)Affine linear correlation distance (AFF): $${D_{AFF}}(P,S) \triangleq ||S - {S_{AFF}}'||$$
 
-(2)Least-squares linear transformation distance (LS): $${D_{LS}}(P,S) \triangleq ||S - S{'_{LS}}||$$
+(2)Least-squares linear transformation distance (LS): $${D_{LS}}(P,S) \triangleq ||S - {S_{LS}}'||$$
 
 * Dominant Dataset Selection Aldorithms
 (1)Scanning Selection Algorithm (SSA)

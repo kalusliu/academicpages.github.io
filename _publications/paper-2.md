@@ -6,8 +6,6 @@ excerpt: 'With the rise of the concept of financial technology, financial and te
 date: Augest 25, 2018
 venue: 'Proceedings of the 2018 International Conference on Big Data Engineering and Technology'
 paperurl: 'https://github.com/niklausliu/niklausliu.github.io/raw/master/files/p31-Liu.pdf'
-citation: 'Account, T. (2009). "Test Accounts: An Introduction." <i>Testing Studies</i>. 1(1).'
-
 ---
 
 # Abstart

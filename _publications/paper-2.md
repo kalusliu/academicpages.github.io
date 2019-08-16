@@ -15,7 +15,7 @@ The overall architecture of the platform is divided into seven layers, including
 
 <img src="/images/paper-2-1.png" alt="Business model based on big data platform." title="Business model based on big data platform." width="700" height="500" />
 
-<img src="/images/paper-2-2.png" alt="Big data platform overall framework." title="Big data platform overall framework." width="500" height="700" />
+<div align=center><img src="/images/paper-2-2.png" alt="Big data platform overall framework." title="Big data platform overall framework." width="500" height="700" /></div>
 
 ## Conclusion
 Big data platform combined with space-time data can really integrate its own data resources, but it also can be derived from a large number of products, on the cost reduction, risk prevention on the business are helpful. Take the insurance industry as an example. The help of this big data platform for product design, product recommendation, product pricing, product marketing and anti-fraud can be enormous. It can also be said that "financial technology" helps the insurance industry. GIS technology has been quite complete. With the maturing of big data technology, the sparks collide with each other are incalculable.

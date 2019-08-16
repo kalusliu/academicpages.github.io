@@ -6,7 +6,6 @@ excerpt: 'With the explosive growth of time-series data, the scale of time-serie
 date: 2019-03-04
 venue: 'IEEE Internet of Things Journal'
 paperurl: 'https://arxiv.org/pdf/1903.00237'
-
 ---
 
 # Abstart

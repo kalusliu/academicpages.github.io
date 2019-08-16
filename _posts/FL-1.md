@@ -1,0 +1,90 @@
+---
+title: 'Federated Learning'
+date: 2019-07-16
+permalink: /posts/2019/07/FL-1/
+tags:
+  - Federated Learning
+---
+
+# 1. Introduction
+
+## 1.1 Background
+
+The success of AI relies on the availability of big data. Deep learning systems that recognize images require tens of millions of training images to reach top performance. This is true not only in computer vision, but speech recognition, question answering chatbots, and large-scale recommendation and prediction systems that empower e- commerce systems. A typical example is **AlphaGo** in 2016, which used a total of 300,000 games as training data and achieved excellent results. With AlphaGo’s success, people naturally hope that the big data-driven AI like AlphaGo will be realized in all aspects of life soon. However, the real situation is very disappointing: with the exception of few industries, most fields have only limited data or poor quality data, making the realization of AI technology difficult. The majority organizations and applications only have **small data**, as data collection is often costly if not impossible today. That is the case with many medical applications such as diagnosis, drug design, and health care. Many of these datasets are scattered across different organizations, departments, and businesses.
+
+These data may look like **isolated islands** on a vast ocean, and we may refer to this problem as **small-data problem**. At the same time, it is also hard to break the barriers between data sources. In general, the data required by AI involves multiple fields. For example, in an AI-driven product recommendation service, the product seller has information about the product, data of the user's purchase, but no data of the user's purchasing ability and payment habits. In most industries, data exists in the form of isolated islands. Due to industry competition, privacy security, and complicated administrative procedures, even data integration between different departments of the same company faces heavy resistance. It is almost impossible to integrate the data scattered around the country and institutions, or the cost is prohibited.
+
+## 1.2 The GDPR and New Challenge of AI
+
+On the other hand, with the advancement of big data, the emphasis on data privacy and security has become a worldwide trend. Every leak of public data will cause great concern to the media and the public. For example, the recent data breach of Facebook has caused a wide range of protests. At the same time, countries are strengthening the protection of data security and privacy. Take the **General Data Protection Regulation (GDPR)**[1], which was enforced by the European Union on May 25, 2018, for example. GDPR aims to protect users' personal privacy and data security. It requires business to use clear and plain language for its user agreement and grants users the "right to be forgotten", that is, users can have their personal data deleted or withdrawn. The GDPR has nearly banned all kinds of autonomous activities in collecting, transferring and using user data. Which means, it is no longer acceptable to simply collect sources of data and integrate them in one location without user permission. Also, many normal operations in the big data domain, such as merging user data from various source parties for building an AI model without any user agreement, are to be considered illegal in the new regulatory framework. The GDPR brings a fundamental shift in the protection of data and privacy, shaping the way how businesses operate; companies will face serious monetary fines for the violation of the regulation.
+
+In the field of AI, the traditional data processing model often involves in one party collecting and transferring data to another party for processing, cleaning and modeling, and finally selling the model to a third party. However, as the above regulations and monitoring become stricter and more substantial, it is possible to break the law by leaving the collector or the user unclear about the specific use of the model. Our data is already in the form of isolated islands. A straightforward solution is to collect all the data to one place for processing. However, it is now illegal to do so because the law does not allow businesses to arbitrarily consolidate data. How to legally solve the problem of isolated data islands is a major challenge for AI scholars and practitioners, because the big data dilemma is likely to lead to the next AI winter.
+
+ ## 1.3 Federated Learning a Feasible Solution
+It is thus argued that for AI to be a genuinely successful and transforming technology, there need to be efforts on two fronts to address the challenges of the small-data problem and data privacy problem. However, traditional methods for solving this dilemma of big data have run into bottlenecks. Simply exchanging data between two companies is not allowed by many regulations including GDPR. First, the user is the owner of the original data, and the company cannot exchange data without the user's approval. Second, the usage of models can't be changed until the user approves it.
+
+Therefore, many attempts at exchanging data in the past, such as Data Exchanges, also require drastic changes to be compliant. At the same time, the data owned by commercial companies often has huge potential value. Two organizations and even two departments of the same organization must consider the interests of exchanging data. Under this premise, one department often choose not to consolidate data with other departments, resulting in data appearing in isolated islands even in the same company.
+
+The federative learning framework intends to make industries effectively and accurately use data across organizations while meeting the privacy, security and regulatory requirements, in addition to building more flexible and powerful models to enable business cooperation by using data collectively but without data exchange directly.
+Federated learning is a system that:
+
+* Data distributed located in each data entities, with no privacy revealing and no compliance violation.
+* Multiple data parties build a virtual shared model under a data federation system, gaining mutual benefit from the system.
+* Under such a federal mechanism, the identity and status of each participant are the same.
+* This virtual model has the same, or nearly the same performance as the model that built by putting all data together.
+
+Federated learning permit learning to be done while multiple data sets stay put – no data exchanges are needed on the raw data to protect privacy and secrecy, providing a feasible solution to the date isolation problem.
+
+# 2. Federated Learning
+## 2.1 Definition of Federated Learning
+Define multiple data owners 𝐹𝑖, i=1…N who all wish to train a machine learning model by consolidating their respective data 𝐷𝑖 . A conventional method is to put all data together and use D={Di, i=1…N} to train a model $$M_{SUM}$$. However, this solution is not possible to implement due to legal issues such as privacy and data security. To solve this problem, we propose federal learning. Federated Learning is a learning process in which data owners collaboratively train a model $$M_{FED}$$ and in the process any data owner 𝐹𝑖 does not expose its data 𝐷𝑖. In addition, the performance of $$𝑀_{𝐹𝐸𝐷},$$ 𝑉_{𝐹𝐸𝐷}$$ should be very close to the performance of $$M_{SUM}$$,$$V_{SUM}$$. That is,
+
+$$
+|V_{FED}-V_{SUM}| \leqslant \delta 
+$$
+
+## 2.2  Categorization of Federated Learning
+The above definition of federated learning does not discuss how to specifically design and implement federated learning. In practice, the island data has different distribution characteristics. According to these characteristics, we can propose a corresponding federated learning framework. Below, we will classify federal learning based on the feature and sample ID distribution characteristics of the island data.
+
+Considering that there are multiple data owners, the data set D_i held by each data owner can be represented by a matrix. Each row of the matrix represents a user, and each column represents a user feature. At the same time, some data sets may also contain label data. If you want to build a predictive model of user behavior, you must have label data. We can call the user feature X and the labels Y. For example, in the financial field, the user's credit is the label Y that needs to be predicted; in the marketing field, the label is the user's purchase desire Y; in the education field, Y is the degree of knowledge of the student. The user feature X plus the label Y constitutes the complete training dataset (X, Y). However, in reality, it is common that the users of the various data sets are not identical, or the user characteristics are not identical. Specifically, taking federated learning with two data owners as an example, the data distribution can be divided into the following three cases:
+
+* The overlap of features （X1,X2,…）is large，whereas the overlap of users (U1,
+U2…)is small；
+* The overlap of users (U1, U2…)is large，whereas the overlap of features（X1,X2,…） is small；
+* The overlap of users (U1, U2…) and the overlap of features（X1,X2,…） are both small.
+In order to provide solutions for the above three scenarios, we classify federated learning into horizontally federated learning, vertically federated learning and federated transfer learning (shown in Figure 1).[Ref WeBank](https://www.fedai.org.cn/)
+
+<img src="/images/FL-1-1.png" width="700" height="500" title="Categorization of Federated Learning"/>
+
+## 2.2.1 Horizontally Federated Learning
+In the scenarios that two data sets share the same feature space but different in samples, a federated learning system is called horizontal federated learning. For example, two regional banks may have very different user groups from their respective regions, and the intersection of users is very small. However, their business is very similar, so the recorded user features are the same. In this case, a horizontal federated learning model can be built. In 2017, Google proposed a horizontal federated learning solution for Android phone model updates[6-7]: A single user using an Android phone constantly updates the model parameters locally and uploads the parameters to the Android cloud, thus jointly training the centralized model together with other data owners. A secure aggregation scheme to protect the privacy of aggregated user updates under their federated learning framework is also introduced.
+
+## 2.2.2	Vertically Federated Learning
+
+Vertically federated learning is applicable to the cases that two data sets share the same users but differ in feature space. For example, consider two different companies in the same city, one is a bank, and the other is an e-commerce. Their user base is likely to contain most of the residents of the area, so the size of common users is large. However, since the bank records the user's revenue and expenditure behavior and credit rating, and the e-commerce retains the user's browsing and purchasing history, their user features are very different. Vertically federated learning is the process of aggregating these different features in an encrypted state and computing the training loss and gradients in a privacy-preserving manner to build a model with both data collaboratively. At present, machine learning models such as logistic regression models, tree structure models and neural network-based models have all been proved being able to incorporate into this federated system.
+
+## 2.2.3	Federated Transfer Learning
+
+Federated Transfer Learning applies to the scenarios that the two data sets differ not only in samples but also in feature space. In this case, transfer learning[9] techniques can be applied to overcome the lack of data or labels. Consider two institutions, one is a bank located in China, and the other is an e-commerce company located in the United States. Due to geographical restrictions, the user groups of the two institutions have a small intersection. On the other hand, due to the different businesses, only a small part of the data features of the two companies overlap. In this case, in order to carry out effective federated learning, it is necessary to introduce transfer learning to solve the problem of small data size and weak supervision, thereby improving the performance of the model.
+
+# 3. Conclusions and Prospects
+In recent years, the isolation of data and the emphasis on data privacy are becoming the next challenges for artificial intelligence, but federated learning has brought us new hope. It could establish a united model for multiple enterprises while the local data is protected, so that enterprises could win together taking the data security as premise. This article generally introduces the basic concept, architecture and techniques of federated learning, and discusses its potential in various applications. It is expected that in the near future, federated learning would break the barriers between industries and establish a community where data and knowledge could be shared together with safety, and the benefits would be fairly distributed according to the contribution of each participant. The bonus of artificial intelligence would finally be brought to every corner of our lives.
+
+# Reference
+[1] Dwork C. Differential privacy: A survey of results[C]//International Conference on Theory and Applications of Models of Computation. Springer, Berlin, Heidelberg, 2008: 1-19.  
+[2] Sweeney L. k-anonymity: A model for protecting privacy[J]. International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems, 2002, 10(05): 557-570.  
+[3] Li N, Li T, Venkatasubramanian S. t-closeness: Privacy beyond k-anonymity and l-diversity[C]//Data Engineering, 2007. ICDE 2007. IEEE 23rd International Conference on. IEEE, 2007: 106-115.  
+[4] Ho Q, Cipar J, Cui H, et al. More effective distributed ml via a stale synchronous parallel parameter server[C]//Advances in neural information processing systems. 2013: 1223-1231.  
+[5] Sheth A P, Larson J A. Federated database systems for managing distributed, heterogeneous, and autonomous databases[J]. ACM Computing Surveys (CSUR), 1990, 22(3): 183-236.   
+[6] Konečný J, McMahan H B, Yu F X, et al. Federated learning: Strategies for improving communication efficiency[J]. arXiv preprint arXiv:1610.05492, 2016.  
+[7] McMahan H B, Moore E, Ramage D, et al. Communication-efficient learning of deep networks from decentralized data[J]. arXiv preprint arXiv:1602.05629, 2016.   
+[8] Hardy S, Henecka W, Ivey-Law H, et al. Private federated learning on vertically partitioned data via entity resolution and additively homomorphic encryption[J]. arXiv preprint arXiv:1711.10677, 2017.    
+[9] Pan S J, Yang Q. A survey on transfer learning[J]. IEEE Transactions on knowledge and data engineering, 2010, 22(10): 1345-1359.   
+[10] Hesamifard E, Takabi H, Ghasemi M. CryptoDL: Deep Neural Networks over Encrypted Data[J]. arXiv preprint arXiv:1711.05189, 2017.  
+[11]	https://www.eugdpr.org  
+[12]	http://www.xinhuanet.com/politics/2016-11/07/c_1119867015.htm 
+[13]	http://www.npc.gov.cn/npc/xinwen/2017-03/15/content_2018907.htm
+
+
+
+

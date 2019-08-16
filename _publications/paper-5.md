@@ -24,7 +24,7 @@ As shown in Fig. 3. DPDM reduces the sensitivity of these gradient-decreasing up
 ## Methods
 * Privacy-preserving Generative Adversarial Network (PPGAN)
 
-<img src="/images/paper-4-9.png" alt="PPGAN algorithm" title="PPGAN algorithm" width="500" height="300" />
+<div align=center><img src="/images/paper-4-9.png" alt="PPGAN algorithm" title="PPGAN algorithm" width="500" height="300" /></div>
 
 ## Result
 * Relationship between Privacy budget and Generation Performance

@@ -21,6 +21,7 @@ As shown in Fig. 3. DPDM reduces the sensitivity of these gradient-decreasing up
 
 <div align=center> 
 <img src="/images/paper-4-6.png" alt="PPGAN flow" title="PPGAN flow" width="500" height="300" />
+</div>
 
 ## Methods
 * Privacy-preserving Generative Adversarial Network (PPGAN)

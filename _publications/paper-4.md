@@ -1,4 +1,3 @@
-
 ---
 title: "PPGAN: Privacy-preserving Generative Adversarial Network (under review)"
 collection: publications

@@ -1,33 +1,78 @@
+
 ---
-title: "Decision Tree Model in the Diagnosis of Breast Cancer"
+title: "PPGAN: Privacy-preserving Generative Adversarial Network (under review)"
 collection: publications
 permalink: /publication/paper-4
-excerpt: 'Breast cancer is the second leading cause of cancer death in women. At the same time, it is one of the most curable cancer if it could be diagnosed early. More and more researchers have confirmed that the decision tree model has a good ability to accurately diagnose. This paper presents a diagnostic method for breast cancer based on the decision tree model combined with feature selection. Experiments were conducted on different training test divisions of the Wisconsin Breast Cancer Data Set (WBCD), a common method used by researchers to diagnose breast cancer based on machine learning methods. In this paper, in order to reduce the complexity of the decision tree model, this paper proposed to delete some highly relevant features of ... After data correlation and independence tests, it finally chosed the tumor thickness, cell shape consistency, single epithelial cell size and mitosis as a subset of the decision tree model. Experimental results show that the classification accuracy (94.3%) significantly outperforms the state-of-theart method with respect to a variety of metrics.'
-date: 2017-12-19
-venue: '2017 International Conference on Computer Technology, Electronics and Communication (ICCTEC)'
-paperurl: 'https://github.com/niklausliu/niklausliu.github.io/raw/master/files/Yi-Decision%20Tree%20Model%20in%20the%20Diagnosis%20of%20Breast%20Cancer.pdf'
-author: 'Liu Yi, Wu Yi'
-
+excerpt: 'Generative Adversarial Network (GAN) and its variants serve as a perfect representation of the data generation model, providing researchers with a large amount of highquality generated data. They illustrate a promising direction for research with limited data availability. When GAN learns the semantic-rich data distribution from a dataset, the density of the generated distribution tends to concentrate on the training data. Due to the gradient parameters of the deep neural network contain the data distribution of the training samples, they can easily remember the training samples. When GAN is applied to private or sensitive data, for instance, patient medical records, as private information may be leakage. To address this issue, we propose a Privacy-preserving Generative Adversarial Network (PPGAN) model, in which we achieve differential privacy in GANs by adding well-designed noise to the gradient during the model learning procedure. Besides, we introduced the Moments Accountant strategy in the PPGAN training process to improve the stability and compatibility of the model by controlling privacy loss. We also give a mathematical proof of the differential privacy discriminator. Through extensive case studies of the benchmark datasets, we demonstrate that PPGAN can generate high-quality synthetic data while retaining the required data available under a reasonable privacy budget.'
+date: 2019-12-04
+venue: 'The 25th IEEE International Conference on Parallel and Distributed Systems (ICPADS) (CCF-C, Core-B Conference)'
+paperurl: 'https://github.com/niklausliu/niklausliu.github.io/raw/master/files/ICPADS2019_paper_194.pdf'
 ---
-# Abstart
-Breast cancer is the second leading cause of cancer death in women. At the same time, it is one of the most curable cancer if it could be diagnosed early. More and more researchers have confirmed that the decision tree model has a good ability to accurately diagnose. This paper presents a diagnostic method for breast cancer based on the decision tree model combined with feature selection. Experiments were conducted on different training test divisions of the Wisconsin Breast Cancer Data Set (WBCD), a common method used by researchers to diagnose breast cancer based on machine learning methods. In this paper, in order to reduce the complexity of the decision tree model, this paper proposed to delete some highly relevant features of ... After data correlation and independence tests, it finally chosed the tumor thickness, cell shape consistency, single epithelial cell size and mitosis as a subset of the decision tree model. Experimental results show that the classification accuracy (94.3%) significantly outperforms the state-of-theart method with respect to a variety of metrics.
 
+# Abstart
+Generative Adversarial Network (GAN) and its variants serve as a perfect representation of the data generation model, providing researchers with a large amount of highquality generated data. They illustrate a promising direction for research with limited data availability. When GAN learns the semantic-rich data distribution from a dataset, the density of the generated distribution tends to concentrate on the training data. Due to the gradient parameters of the deep neural network contain the data distribution of the training samples, they can easily remember the training samples. When GAN is applied to private or sensitive data, for instance, patient medical records, as private information may be leakage. To address this issue, we propose a Privacy-preserving Generative Adversarial Network (PPGAN) model, in which we achieve differential privacy in GANs by adding well-designed noise to the gradient during the model learning procedure. Besides, we introduced the Moments Accountant strategy in the PPGAN training process to improve the stability and compatibility of the model by controlling privacy loss. We also give a mathematical proof of the differential privacy discriminator. Through extensive case studies of the benchmark datasets, we demonstrate that PPGAN can generate high-quality synthetic data while retaining the required data available under a reasonable privacy budget.
+
+## Introduction
+training data to perform data mining tasks, in the field of medical and health informatics, such as disease prediction and auxiliary diagnosis. Deep learning models are employed to remember the characteristics of a large number of training sample for classification or prediction purposes. However, organizations such as hospitals and research institutes are paying more and more attention to the protection of data. Additionally, General Data Protection Regulation (GDPR) issued by the European Union prohibits organizations from sharing private data. It is increasingly difficult for researchers to obtain training data unlimited legally.
+
+## Model
+As shown in Fig. 3. DPDM reduces the sensitivity of these gradient-decreasing updates (and thus the overall accuracy) by clipping the stochastic gradients, essentially ensuring that the gradient will be within a bounded range. Hence, we only need to add noise proportional to the sensitivity to ensure differential privacy. (In the Algorithm 2.) We present the steps of PPGAN in Fig. 2:
+
+<img src="/images/paper-4-1.png" alt="PPGAN" title="PPGAN" width="700" height="500" class="align-center"/>
+
+<img src="/images/paper-4-6.png" alt="PPGAN flow" title="PPGAN flow" width="500" height="300" class="align-center"/>
+
+## Methods
+* Privacy-preserving Generative Adversarial Network (PPGAN)
+
+<img src="/images/paper-4-9.png" alt="PPGAN algorithm" title="PPGAN algorithm" width="500" height="300" class="align-center"/>
+
+## Result
+* Relationship between Privacy budget and Generation Performance
+
+As shown in Fig. 4, as the privacy budget increases, the quality of the generated images is getting worse.
+
+<img src="/images/paper-4-8.png" alt="Generated images with four different $$\eplison$$ on MNIST dataset are plotted in each group." title="Generated images with four different $$\eplison$$ on MNIST dataset are plotted in each group." width="700" height="500" class="align-center"/>
+
+Next, we will focus on the impact of noise on PPGAN’s loss function during training. The result is shown in Fig. 5 In the non-private case, we observe the training loss of the first 100 epoch in training. The result indicates that the loss of GAN is smooth and stable, and no large fluctuations exist in this round of training. When the loss of the PPGAN with noise starts to fluctuate at the tail of the curve, PPGAN can still converge.
+
+<img src="/images/paper-4-7.png" alt="Loss of Non-private Case and Private Case." title="Loss of Non-private Case and Private Case." width="700" height="500" class="align-center"/>
+
+* Relationship between Privacy budget and High-quality Datesets
+
+The generated data’s (generated by PPGAN) generate score is compared to the real data of the MNIST dataset with different privacy
+budgets. The larger the score value, the better the quality of the data generated by the generator. The figure shows the distribution of the generate scores of PPGAN in the case of $$\varepsilon $$= 20; 10; 5.
+
+To evaluate the performance of PPGAN, we conpare three solutions, namely dp-GAN, DPGAN and WGAN (Non-private Case) in terms of the quality of the generated data.
+
+Inception scores:
+
+$$I(G) = \exp ({E_{x \sim G(z)}}KL(\Pr (y|x)||\Pr (y)))$$
+
+Generate scores:
+
+$$P(G) = |(I(G) - mean(I(G)))/(max (I(G)) - \min (I(G)))|$$
+
+<img src="/images/paper-4-2.png" alt="Result-1." title="Result-1." width="700" height="300" class="align-center"/>
+
+<img src="/images/paper-4-3.png" alt="Result-2." title="Result-2." width="700" height="300" class="align-center"/>
+
+* Utility Evaluation of PPGAN
+
+In this subsection, we further compare the performance of PPGAN in specific analytical tasks with the existing model (WGAN) on the MNIST and MIMIC-III datasets.
+
+<img src="/images/paper-4-4.png" alt="Result-3." title="Result-3." width="700" height="300" class="align-center"/>
+
+<img src="/images/paper-4-5.png" alt="Result-4." title="Result-4." width="700" height="300" class="align-center"/>
+
+## Conclusion
+In this paper, we propose the PPGAN model that preserves the privacy of training data in a differentially private case. PPGAN mitigates information leakage by adding welldesigned noise to the gradient during the learning process. We conducted two experiments to show that the proposed algorithm can converge under the noise and constraints of the training data and generate high-quality data. In addition, our experimental results verify that PPGAN does not suffer from mode collapse or gradient disappearance during training, thus maintaining excellent stability and scalability of model training.
 
 ## Citations
 <pre>
-@INPROCEEDINGS{8789297, 
-author={L. {Yi} and W. {Yi}}, 
-booktitle={2017 International Conference on Computer Technology, Electronics and Communication (ICCTEC)}, 
-title={Decision Tree Model in the Diagnosis of Breast Cancer}, 
-year={2017}, 
-volume={}, 
-number={}, 
-pages={176-179}, 
-keywords={Decision trees;Breast cancer;Correlation;Shape;Feature extraction;Predictive models;Breast cancer diagnosis;Decision tree;Feature selection}, 
-doi={10.1109/ICCTEC.2017.00046}, 
-ISSN={}, 
-month={Dec},}
+Coming soon...
 </pre>
 
-[[Link]](https://ieeexplore.ieee.org/document/8789297)[[Download]](https://github.com/niklausliu/niklausliu.github.io/raw/master/files/Yi-Decision%20Tree%20Model%20in%20the%20Diagnosis%20of%20Breast%20Cancer.pdf)
+[[Download]](https://github.com/niklausliu/niklausliu.github.io/raw/master/files/ICPADS2019_paper_194.pdf)
+
 

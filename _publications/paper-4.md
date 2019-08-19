@@ -52,17 +52,17 @@ Generate scores:
 
 $$P(G) = |(I(G) - mean(I(G)))/(max (I(G)) - \min (I(G)))|$$
 
-<img src="/images/paper-4-2.png" alt="Result-1." title="Result-1." width="700" height="300" class="align-center"/>
+<img src="/images/paper-4-2.png" alt="Result-1." title="Result-1." width="500" height="300" class="align-center"/>
 
-<img src="/images/paper-4-3.png" alt="Result-2." title="Result-2." width="700" height="300" class="align-center"/>
+<img src="/images/paper-4-3.png" alt="Result-2." title="Result-2." width="500" height="300" class="align-center"/>
 
 * Utility Evaluation of PPGAN
 
 In this subsection, we further compare the performance of PPGAN in specific analytical tasks with the existing model (WGAN) on the MNIST and MIMIC-III datasets.
 
-<img src="/images/paper-4-4.png" alt="Result-3." title="Result-3." width="700" height="300" class="align-center"/>
+<img src="/images/paper-4-4.png" alt="Result-3." title="Result-3." width="500" height="300" class="align-center"/>
 
-<img src="/images/paper-4-5.png" alt="Result-4." title="Result-4." width="700" height="300" class="align-center"/>
+<img src="/images/paper-4-5.png" alt="Result-4." title="Result-4." width="500" height="300" class="align-center"/>
 
 ## Conclusion
 In this paper, we propose the PPGAN model that preserves the privacy of training data in a differentially private case. PPGAN mitigates information leakage by adding welldesigned noise to the gradient during the learning process. We conducted two experiments to show that the proposed algorithm can converge under the noise and constraints of the training data and generate high-quality data. In addition, our experimental results verify that PPGAN does not suffer from mode collapse or gradient disappearance during training, thus maintaining excellent stability and scalability of model training.

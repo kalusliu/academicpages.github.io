@@ -69,7 +69,7 @@ In this paper, we propose the PPGAN model that preserves the privacy of training
 
 ## Citations
 <pre>
-Coming soon....
+Coming soon...
 </pre>
 
 [[Download]](https://github.com/niklausliu/niklausliu.github.io/raw/master/files/ICPADS2019_paper_194.pdf)

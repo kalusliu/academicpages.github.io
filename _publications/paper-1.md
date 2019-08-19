@@ -36,7 +36,7 @@ $$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on t
 
 * Affine Relation Model
 
-<img src="/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="700" height="500" class="align-center" />
+<img src="/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="500" height="300" class="align-center" />
 
 Assuming that the central object dataset $$P$$ and the sample object dataset $$S$$, the two linear distance measures are introduced as follows:
 
@@ -54,7 +54,7 @@ $${D_{LS}}(P,S) \triangleq ||S - {S_{LS}}'||$$
 
 A sample for the dominant dataset selection process based on SSA:
 
-<img src="/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA." title="A sample for the dominant dataset selection process based on SSA." width="700" height="500" class="align-center"/>
+<img src="/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA." title="A sample for the dominant dataset selection process based on SSA." width="500" height="300" class="align-center"/>
 
 The total time complexity of SSA is O(m*n)+O(n^3), namely, O(n^3).
 

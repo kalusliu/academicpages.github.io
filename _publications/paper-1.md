@@ -36,7 +36,7 @@ $$X = {Y_P} \cup P$$, $$P$$ is defined as a dominant dataset of $$X$$ based on t
 
 * Affine Relation Model
 
-<img src="/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="700" height="500" align="center" />
+<img src="/images/paper-1-1.png" alt="Procedure for generating the pivot pairs." title="Procedure for generating the pivot pairs." width="700" height="500" class="align-center" />
 
 Assuming that the central object dataset $$P$$ and the sample object dataset $$S$$, the two linear distance measures are introduced as follows:
 
@@ -50,40 +50,40 @@ $${D_{LS}}(P,S) \triangleq ||S - {S_{LS}}'||$$
 
 (1)Scanning Selection Algorithm (SSA)
 
-<img src="/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)." title="Scanning Selection Algorithm (SSA)." width="700" height="500" />
+<img src="/images/paper-1-2.png" alt="Scanning Selection Algorithm (SSA)." title="Scanning Selection Algorithm (SSA)." width="500" height="300" class="align-center" />
 
 A sample for the dominant dataset selection process based on SSA:
 
-<img src="/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA." title="A sample for the dominant dataset selection process based on SSA." width="700" height="500" />
+<img src="/images/paper-1-3.png" alt="A sample for the dominant dataset selection process based on SSA." title="A sample for the dominant dataset selection process based on SSA." width="700" height="500" class="align-center"/>
 
 The total time complexity of SSA is O(m*n)+O(n^3), namely, O(n^3).
 
 (2)Greedy Selection Algorithm (GSA)
 
-<img src="/images/paper-1-4.png" alt="Greedy Selection Algorithm (GSA)." title="Greedy Selection Algorithm (GSA)." width="700" height="500" />
+<img src="/images/paper-1-4.png" alt="Greedy Selection Algorithm (GSA)." title="Greedy Selection Algorithm (GSA)." width="500" height="300" class="align-center"/>
 
 A sample for the dominant dataset selection process based on GSA:
 
-<img src="/images/paper-1-5.png" alt="A sample for the dominant dataset selection process based on GSA." title="A sample for the dominant dataset selection process based on GSA." width="700" height="500" />
+<img src="/images/paper-1-5.png" alt="A sample for the dominant dataset selection process based on GSA." title="A sample for the dominant dataset selection process based on GSA." width="700" height="500" class="align-center"/>
 
 The total time complexity of GSA isO(m*n) + O(n^3) + O(n^4), namely, O(n^4).
 
 ## Results
 * Effects of Parameter $$\delta $$ on the Dominant Dataset Selection
 
-<img src="/images/paper-1-6.png"  width="700" height="500" />
+<img src="/images/paper-1-6.png"  width="700" height="500" class="align-center"/>
 
-<img src="/images/paper-1-7.png"  width="700" height="500" />
+<img src="/images/paper-1-7.png"  width="700" height="500" class="align-center"/>
 
-<img src="/images/paper-1-10.png"  width="700" height="500" />
+<img src="/images/paper-1-10.png"  width="700" height="500" class="align-center"/>
 
 
 
 * The number distribution of target objects
 
-<img src="/images/paper-1-8.png"  width="700" height="500" />
+<img src="/images/paper-1-8.png"  width="700" height="500" class="align-center"/>
 
-<img src="/images/paper-1-9.png"  width="700" height="500" />
+<img src="/images/paper-1-9.png"  width="700" height="500" class="align-center"/>
 
 # CONCLUSION 
 This paper studies how to extract the dominant dataset from time-series data. We prove that the selection problem of the minimum dominant dataset is an NP-complete problem. Based on the linear correlation relationship between time-series data objects, we present a recursive affine transformation function to realize the efficient dominant dataset selection. In addition, the linear correlation distance is applied as the constraint condition for the dominant dataset selection. We further propose the dominant dataset selection algorithms based on the scanning strategy and the greedy strategy. The analysis and experimental results show that the proposed algorithms have high performance in terms of effectiveness and efficiency. In the future, we will continue to investigate the dominant dataset selection methods based on some linear/nonlinear relation models between time-series data, and further evaluate the proposed methods using the different types of time-series data on multiple application scenarios.
